@@ -1,0 +1,21 @@
+.wrapper {
+    text-align: center;
+}
+
+.questions  {
+    font-size: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answers {
+    font-size: 30px;
+}
+
+.choice1, .choice2, .choice3, .choice4 {
+    padding: 15px;
+    margin-top: 10px;
+} 
