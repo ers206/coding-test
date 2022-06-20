@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- take the following 2 lines out if i cant get it to look right -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 </head>
 
 <body>
@@ -17,17 +17,20 @@
     <p>View high score</p>
     <p>Time count down</p>
     </header>
-
+    <!-- questions answers and buttons -->
     <div class = "wrapper">
-         <div class = "questions">
-            <p>questions here</p>
+         <div id = "questions" class="hide">
+            <div id="test-questions">Questions</div>
+            <div class = "answers">
+                <button class = "choice1">choice here</button>
+                <button class = "choice2">choice here</button>
+                <button class = "choice3">choice here</button>
+                <button class = "choice3">choice here</button>
          </div>
-         <div class = "answers">
-            <div class = "choice1">choice here</div>
-            <div class = "choice2">choice here</div>
-            <div class = "choice3">choice here</div>
-            <div class = "choice3">choice here</div>
-
+         <!-- buttons -->
+         <div class = "buttons">
+            <button id="start-button" class="start-button btn">START</button>
+            <button id="next-button" class="next-button btn hide">START</button>
          </div>
 
 

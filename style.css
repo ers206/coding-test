@@ -2,10 +2,8 @@
     text-align: center;
 }
 
-.questions  {
-    font-size: 50px;
-}
 
+/* high score and timed counter */
 header {
     display: flex;
     justify-content: space-between;
