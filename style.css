@@ -21,11 +21,31 @@ header {
     
 }
 .wrapper{
-    display: flex;
+    height: 500px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    /* display: flex;
     max-width:100%;
     width: 1000px;
-    justify-content: center;
+    justify-content: center; */
     
+}
+
+.start-button:hover, .choice:hover{
+    background-color: blue;
+    color: cornsilk;
+}
+
+.choice {
+    margin: 7px;
+}
+/* check to see if next button needed */
+/* hide .start-button? */
+.start-button, .next-button {
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
 }
 /* .questions-answers {
     width: 800px;
@@ -53,7 +73,7 @@ btn.correct {
 
 btn.incorrect{
 
-} */ */
+} */ 
 /* .choice1, .choice2, .choice3, .choice4 {
     padding: 15px;
     margin-top: 10px;
