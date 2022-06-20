@@ -1,4 +1,7 @@
-.wrapper {
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+/* .wrapper {
     text-align: center;
 }
 
@@ -8,12 +11,50 @@ header {
     display: flex;
     justify-content: space-between;
 }
+ /* #questions-answers{
+    display: flex;
+     align-items: center; 
+    justify-content: center;
+}  */
+.answer-btns{
+    display: grid;
+    
+}
+.wrapper{
+    display: flex;
+    max-width:100%;
+    width: 1000px;
+    justify-content: center;
+    
+}
+/* .questions-answers {
+    width: 800px;
+    max-width: 80%;
+   
+    
 
-.answers {
-    font-size: 30px;
+}
+.answer-btns {
+    display: grid;
+
+    
+} */
+
+ 
+/* .answers {
+    font-size: 45px;
+}
+.btn:hover {
+    color: aqua;
+}
+btn.correct {
+
 }
 
-.choice1, .choice2, .choice3, .choice4 {
+btn.incorrect{
+
+} */ */
+/* .choice1, .choice2, .choice3, .choice4 {
     padding: 15px;
     margin-top: 10px;
-} 
+}  */

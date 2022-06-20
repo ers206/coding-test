@@ -8,24 +8,27 @@
     <!-- take the following 2 lines out if i cant get it to look right -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script defer src="script.js"></script>
 </head>
 
-<body>
+<header>
+<p>View high score</p>
+<p>Time count down</p>
+</header>
+
     <!-- view high score will need to be a tag to link to high score -->
     <!-- timer needs to count down -->
-    <header>
-    <p>View high score</p>
-    <p>Time count down</p>
-    </header>
+    
+<body>   
     <!-- questions answers and buttons -->
     <div class = "wrapper">
-         <div id = "questions" class="hide">
+         <div id = "questions-answers" class="hide">
             <div id="test-questions">Questions</div>
-            <div class = "answers">
-                <button class = "choice1">choice here</button>
-                <button class = "choice2">choice here</button>
-                <button class = "choice3">choice here</button>
-                <button class = "choice3">choice here</button>
+            <div id = "answers" class="answer-btns">
+                <button class = "choice">choice here 1</button>
+                <button class = "choice">choice here 2</button>
+                <button class = "choice">choice here 3</button>
+                <button class = "choice">choice here 4</button>
          </div>
          <!-- buttons -->
          <div class = "buttons">
