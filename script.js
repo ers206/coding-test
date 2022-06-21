@@ -3,23 +3,44 @@ var questionBox =document.getElementById('questions-answers')
 var questionElement=document.getElementById('test-questions')
 var answerElement=document.getElementById('answer-choices')
 
-// let shuffledQuestions, currentQuestionIndex
+// timer vars
+var timeLeft = 100
 
 beginGame.addEventListener('click', gameBegins)
+answerElement.addEventListener('click', nextQuestion)
 
-// not working below nothing
+// localStorage
+
+
+
+// document.getElementById("timer").innerHTML =
+
+// counting way too fast
 function gameBegins() {
  console.log('start game')
+//  start timer
 //  setTimeout()
-
-
-      
+var timeCountdown = setInterval(function () {
+    if (timeLeft > 1) {
+      timer.textContent = timeLeft + ' seconds remaining';
+      timeLeft--;
+    }
+    else if (timeLeft === 1) {
+        timer.textContent = timeLeft + ' second remaining';
+        timeLeft--;
+      } 
+      else {
+       //stop game if timer =<0
+             timer.textContent= "Time is up"
+      }
+},)   
 
 
 }
 
-
+// need to change text in html
 function nextQuestion() {
+    console.log('next question')
 
 
 }
