@@ -9,17 +9,16 @@ var timeLeft = 100
 beginGame.addEventListener('click', gameBegins)
 answerElement.addEventListener('click', nextQuestion)
 
-// localStorage
+// localStorage for high score
+// localStorage.setItem()
 
 
+// put questions and answers in correct locations to begin test
 
-// document.getElementById("timer").innerHTML =
 
-// counting way too fast
 function gameBegins() {
  console.log('start game')
 //  start timer
-//  setTimeout()
 var timeCountdown = setInterval(function () {
     if (timeLeft > 1) {
       timer.textContent = timeLeft + ' seconds remaining';
@@ -33,15 +32,20 @@ var timeCountdown = setInterval(function () {
        //stop game if timer =<0
              timer.textContent= "Time is up"
       }
-},)   
+},1000)   
+
 
 
 }
 
 // need to change text in html
+// for loop for questions and choices
 function nextQuestion() {
     console.log('next question')
 
+  for(var i=0; i<questions.length;i++) {
+    questions
+  }
 
 }
 
