@@ -10,68 +10,48 @@ beginGame.addEventListener('click', gameBegins)
 // not working below nothing
 function gameBegins() {
  console.log('start game')
+//  setTimeout()
+
 
       
 
 
-// //  beginGame.classList.add('hide')
-//  shuffledQuestions = questions.sort(() => Math.random() - .5)
-//  currentQuestionIndex = 0
-// //  questionBox.classList.remove('hide')
-//  setNextQuestion()
 }
 
-// function setNextQuestion(){
-//     nextQuestion(shuffledQuestions[currentQuestionIndex])
-// }
-// error line 17 and 13
+
 function nextQuestion() {
 
-//    questionElement.innerText = question.question
-//     question.answers.forEach(answer => {
-//      const button  = document.createElement('button') 
-//      button.innerText = answer.text
-//      button.classList.add('choice')
-//      if(answer.correct) {
-//         button.dataset.correct = answer.correct
-//      }
-//      button.addEventListener('click', selectChoice)
-//      answerElement.appendChild(button)
 
- //   });
 }
 
-function selectChoice() {
-  
-} 
 
 
 // questions and answers
 var questions = [ 
     {
-    question: "eij iajei ailr jierja iaj; ",
-    answers: ["2", "4", "5'", "8" ],
-    correct: 1
+    question: "Inside which HTML elements do we put the JavaScript?; ",
+    answers: ["<div>", "<js>", "<script>'", "<javascript>" ],
+    correct: 2
 
 },
     {
-    question:
-    answers:
-    correct:
+    question:"Javascript can be written...",
+    answers:["directly on the server page", "directly into HTML", "directly into JS file and included into HTML", "All of these"],
+    correct: 2
 },
     {
-    question:
-    answers:
-    correct:   
+    question:"JavaScript is a ________ language",
+    answers:["Application", "Scripting", "Programming", "None of these"],
+    correct: 1  
 },
     {
-    question:
-    answers:
-    correct:
+    question:"Javascript code can be called by using",
+    answers:["preprocessor", "Trigger Event", "all of these", "Function/Method"],
+    correct: 3
 },
     {
-    question:
-    answers:
-    correct:    
-    }
+    question:"The statement a===b refers to",
+    answers: ["Both a and b are equal in value and type", "Both a and b are equal in value", "Both a and b are equal in type", "there is no such statement"],
+    correct: 0    
+    }  
 ]

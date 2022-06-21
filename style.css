@@ -1,6 +1,4 @@
-*, *::after, *::before {
-    box-sizing: border-box;
-}
+
 /* .wrapper {
     text-align: center;
 }
@@ -11,11 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
- /* #questions-answers{
-    display: flex;
-     align-items: center; 
-    justify-content: center;
-}  */
+
 .answer-btns{
     display: grid;
     
@@ -25,10 +19,7 @@ header {
     margin: auto;
     width: 50%;
     padding: 10px;
-    /* display: flex;
-    max-width:100%;
-    width: 1000px;
-    justify-content: center; */
+    
     
 }
 
@@ -39,6 +30,7 @@ header {
 
 .choice {
     margin: 7px;
+    font-size: 30px;
 }
 /* check to see if next button needed */
 /* hide .start-button? */
@@ -47,34 +39,9 @@ header {
     padding: 5px;
     margin: 10px;
 }
-/* .questions-answers {
-    width: 800px;
-    max-width: 80%;
-   
-    
-
+#test-questions {
+    font-size: 35px;
 }
-.answer-btns {
-    display: grid;
-
-    
+/* #choice1, #choice2, #choice3, #choice4 {
+    font-size: 27px;
 } */
-
- 
-/* .answers {
-    font-size: 45px;
-}
-.btn:hover {
-    color: aqua;
-}
-btn.correct {
-
-}
-
-btn.incorrect{
-
-} */ 
-/* .choice1, .choice2, .choice3, .choice4 {
-    padding: 15px;
-    margin-top: 10px;
-}  */
