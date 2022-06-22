@@ -32,7 +32,7 @@ header {
     margin: 7px;
     font-size: 30px;
 }
-/* check to see if next button needed */
+
 /* hide .start-button? */
 .start-button, .next-button {
     font-size: 25px;
@@ -43,6 +43,6 @@ header {
     font-size: 35px;
 }
 /* hide questions and answers until start clicked */
-.hide {
+#answer-choices, #test-questions {
     display: none;
 }

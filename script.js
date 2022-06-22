@@ -1,26 +1,34 @@
-// var beginGame = document.getElementById("start-button");
+var beginGame = document.getElementById("start-button");
 var questionBox = document.getElementById("questions-answers");
 var questionElement = document.getElementById("test-questions");
 // var answerElement = document.getElementById("answer-choices");
 
 // timer vars
-var timeLeft, currentQuestion;
+var timeLeft, currentQuestion = 0;
 
-// beginGame.addEventListener("click", gameBegins);
-// answerElement.addEventListener("click", nextQuestion);
+var score = 0;
 
 // localStorage for high score
 // localStorage.setItem()
 
-// put questions and answers in correct locations to begin test
+// console.log(currentQuestion.textContent)
 
+// how to make visible after start button pressed
+var answersVisible= document.getElementById("answer-choices");
+var questionVisible = document.getElementById("test-questions");
+var beginGame = document.getElementById("start-button");
+
+// currentQuestion = 0;
+// start timer, make questions and answers answersVisible, start nextQuestion, turnoff start button
 function startGame() {
-  console.log("start game");
-  //  start timer
+//   console.log("start game");
   timeLeft = 100;
   startTimer();
-  currentQuestion = 0;
   nextQuestion();
+  answersVisible.style.display = "grid";
+  questionVisible.style.display = "grid";
+  beginGame.style.display = "none";
+
 }
 
 function startTimer() {
@@ -55,9 +63,18 @@ function nextQuestion() {
 // check to see if clicked answers == correct
 function checkAnswer(event) {
     var choicePicked = event.target.textContent;
+    // var correctAnswer= event.target.
     currentQuestion++;
     nextQuestion()
+    // if (choicePicked == correctAnswer){
+    //     score = score + 1;
+    // }
+    
 }
+console.log(score)
+console.log(currentQuestion)
+// need to see if clicked choice == correct choice
+// var correctAnswer = event.target.
 
 // questions and answers
 var questions = [
@@ -105,3 +122,6 @@ var questions = [
 ];
 
 document.querySelector("#start-button").addEventListener("click", startGame);
+
+// determine if correct answers are chosen
+
