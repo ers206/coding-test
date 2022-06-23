@@ -6,7 +6,7 @@ var questionElement = document.getElementById("test-questions");
 // timer vars
 var timeLeft, currentQuestion = 0;
 
-var score = 0;
+var score = "";
 
 // localStorage for high score
 // localStorage.setItem()
@@ -45,7 +45,7 @@ function startTimer() {
     }
   }, 1000);
 }
-// need to change text in html
+
 
 function nextQuestion() {
     console.log("next question");
@@ -63,7 +63,10 @@ function nextQuestion() {
 // check to see if clicked answers == correct
 function checkAnswer(event) {
     var choicePicked = event.target.textContent;
-    // var correctAnswer= event.target.
+    var correctChoice = questions[currentQuestion].correct
+    if(choicePicked == correctChoice){
+      score++
+    }
     currentQuestion++;
     nextQuestion()
     // if (choicePicked == correctAnswer){
@@ -71,8 +74,6 @@ function checkAnswer(event) {
     // }
     
 }
-console.log(score)
-console.log(currentQuestion)
 // need to see if clicked choice == correct choice
 // var correctAnswer = event.target.
 
@@ -123,5 +124,8 @@ var questions = [
 
 document.querySelector("#start-button").addEventListener("click", startGame);
 
-// determine if correct answers are chosen
 
+
+
+console.log(currentQuestion)
+    console.log(score)
